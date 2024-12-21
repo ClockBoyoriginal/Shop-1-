@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эксклюзивный магазин</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function selectClass(className) {
+            alert(Вы выбрали класс: ${className});
+            document.getElementById('class-selection').style.display = 'none';
+            document.getElementById('shop').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Эксклюзивный Магазин Бихёна</h1>
+        <p>Здесь вы найдете уникальные товары для избранных.</p>
+    </header>
+    <div id="class-selection" class="container">
+        <div class="class-choice">
+            <div>
+                <h2>Медик</h2>
+                <p>Лечит союзников и спасает в критических ситуациях.</p>
+            </div>
+            <button onclick="selectClass('Медик')">Выбрать</button>
+        </div>
+        <div class="class-choice">
+            <div>
+                <h2>Ближник</h2>
+                <p>Мастер рукопашного боя и быстрых атак.</p>
+            </div>
+            <button onclick="selectClass('Ближник')">Выбрать</button>
+        </div>
+        <div class="class-choice">
+            <div>
+                <h2>Лучник</h2>
+                <p>Точный стрелок с мощными дальнобойными атаками.</p>
+            </div>
+            <button onclick="selectClass('Лучник')">Выбрать</button>
+        </div>
+        <div class="class-choice">
+            <div>
+                <h2>Маг</h2>
+                <p>Владыка заклинаний и разрушительных чар.</p>
+            </div>
+            <button onclick="selectClass('Маг')">Выбрать</button>
+        </div>
+        <div class="class-choice">
+            <div>
+                <h2>Танк</h2>
+                <p>Непробиваемая защита и высокая выносливость.</p>
+            </div>
+            <button onclick="selectClass('Танк')">Выбрать</button>
+        </div>
+    </div>
+    <div id="shop" class="container">
+        <div class="item">
+            <div>
+                <h2>Артефакт: Клинок Судьбы</h2>
+                <p>Цена: 5000 монет</p>
+                <p>Описание: Легендарное оружие, способное менять судьбу владельца.</p>
+            </div>
+            <button>Купить</button>
+        </div>
+        <div class="item">
+            <div>
+                <h2>Эликсир Жизни</h2>
+                <p>Цена: 2000 монет</p>
+                <p>Описание: Восстанавливает здоровье и дарует энергию.</p>
+            </div>
+            <button>Купить</button>
+        </div>
+        <div class="item">
+            <div>
+                <h2>Свиток Вечности</h2>
+                <p>Цена: 10000 монет</p>
+                <p>Описание: Позволяет владельцу управлять временем.</p>
+            </div>
+            <button>Купить</button>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Эксклюзивный Магазин Бихёна. Все права защищены.</p>
+    </footer>
+</body>
+</html>
